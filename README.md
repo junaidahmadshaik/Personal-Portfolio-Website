@@ -79,14 +79,19 @@ Update the `scriptURL` in the JavaScript section to use your own Apps Script end
 
 ## ✨ Screenshots
 
-<img width="910" height="910" alt="image" src="https://github.com/user-attachments/assets/586a0a1b-0565-4d05-a0c2-3e017c7b11b6" /><br>
-Home Page
-<img width="910" height="910" alt="image" src="https://github.com/user-attachments/assets/6dc1ea2c-3b5f-4a4e-b35c-3d40ba7785ed" /><br>
-About Me
-<img width="910" height="910" alt="image" src="https://github.com/user-attachments/assets/3576edec-80f1-4166-bca7-541c80448194" /><br>
-Certifications
-<img width="910" height="910" alt="image" src="https://github.com/user-attachments/assets/8a1cd7c1-469b-40be-9441-db0541ab1585" /><br>
-Contact Page
+<div align="center">
+  <img width="910" height="910" alt="Home Page" src="https://github.com/user-attachments/assets/586a0a1b-0565-4d05-a0c2-3e017c7b11b6" />
+  <p><strong>Home Page</strong></p>
+
+  <img width="910" height="910" alt="About Me" src="https://github.com/user-attachments/assets/6dc1ea2c-3b5f-4a4e-b35c-3d40ba7785ed" />
+  <p><strong>About Me</strong></p>
+
+  <img width="910" height="910" alt="Certifications" src="https://github.com/user-attachments/assets/3576edec-80f1-4166-bca7-541c80448194" />
+  <p><strong>Certifications</strong></p>
+
+  <img width="910" height="910" alt="Contact Page" src="https://github.com/user-attachments/assets/8a1cd7c1-469b-40be-9441-db0541ab1585" />
+  <p><strong>Contact Page</strong></p>
+</div>
 
 
 ---
