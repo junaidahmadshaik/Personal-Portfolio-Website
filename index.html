@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@700&display=swap"
+            rel="stylesheet">
+        <style>
+            * {
+                margin:0;
+                padding: 0;
+            }
+            body{
+                background-color: rgb(16, 15, 15);
+                color: rgb(235, 235, 226);
+                font-family: 'Poppins', sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                background-color: rgb(15, 16, 16);
+                height: 150px;
+            }
+            nav ul{
+                display: flex;
+                justify-content: center;
+                margin: 90px;
+                
+            }
+            nav ul li{
+                list-style: none;
+                margin: 25px;
+                font: bold;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: white;
+            }
+            nav ul li a:hover{
+                font-size: 1.05rem;
+                color: rgb(166, 152, 152);
+            }
+            .left{
+                font-size: 1.4rem;
+                position: relative;
+                left: 35px;
+                font-family:  Verdana, Arial, Helvetica, sans-serif;;
+            }
+            .head{
+                color: rgb(215, 67, 38);
+                font-size: 135%;
+            }
+            .head-title{
+                font-size: 42px;
+               font-family: cursive;
+               font-weight: bold;
+            }
+            .rigth{
+                position: relative;
+                right: -95px;
+            }
+            .first{
+                display: flex;
+                justify-content: space-around;
+                margin: 65px;
+                align-items: center;
+            }
+            .first > div{
+                width: 40%;
+                margin-left: 70px;
+                position: relative;
+                left: 40px;
+            }
+            .leftsection{
+                font-size: 2.19rem;
+                margin-right: 130px;
+                margin-top: -90px;
+            }
+            .rigthsection img{
+                width: 80%;
+                margin: 50px 0;
+                position: relative;
+                right: 75px;
+                margin-top: -15px;
+            }
+            .name{
+                color: rgb(215, 67, 38);
+                font-size: 2.5rem;
+            }
+            #element{
+                color: rgb(215, 67, 38);
+                font-size: 2.3rem;
+            }
+            /*--------------About-----------------*/
+            #about{
+                padding: 80px;
+                color: #ababab;
+            }
+            .row{
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .col-1{
+                flex-basis: 35%;
+            }
+            .col-1 img{
+                width: 380px;
+                height: 500px;
+                border-radius: 7%;
+                position: relative;
+                left: 50px;
+            }
+            .col-2{
+                flex-basis: 60%;
+                left: -8px;
+                position: relative;
+            }
+            .sub-title{
+                font-size: 48px;
+                font-weight: 530;
+                color: white;
+                position: relative;
+                top: -12px;
+                
+            }
+            .tab-titles{
+                display: flex;
+                margin: 20px 0 40px;
+            }
+            .tab-links{
+                margin-right: 50px;
+                font-size: 18px;
+                font-weight: 500;
+                cursor: pointer;
+                position: relative;
+            }
+            .tab-links::after{
+                content: '';
+                width: 0;
+                height: 3px;
+                background: #ff004f;
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                transition: 0.5s;
+            }
+            .tab-links.active-link::after{
+                width: 50px;
+            }
+            .tab-contents{
+                position: relative;
+               
+                display: None;
+            }
+            .tab-contents.active-tab{
+                display: block;
+            }
+            #skills ul li{
+                
+                list-style: none;
+            }
+            #education ul li{
+                color: rgb(215, 67, 38);
+                list-style: none;
+            }
+            /*--------------------Certifications---------------------------------*/
+            #Certifications{
+                padding: 30px 0;
+                margin-top: -13px;
+            }
+            .title{
+                font-size: 52px;
+                font-weight: 530;
+                color: white;
+                text-align: center;
+                margin-top: 60px;
+                margin-bottom: 40px;
+            }
+            .row-1{
+                margin: 65px;
+            }
+            .column-1{
+                float: left;
+                width: 30.33%;
+                padding: 20px;
+                height: 325px;
+            }
+            .row-1::after{
+                display: table;
+                content: '';
+                clear: both;
+            }
+            .column-1 p{
+                color: rgb(182, 183, 187);
+                font-size: 110%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .column-1 img{
+                margin-bottom: 6px;
+            }
+
+            .row-2{
+                margin: 65px;
+            }
+            .column-2{
+                float: left;
+                width: 30.33%;
+                padding: 20px;
+                height: 325px;
+            }
+            .row-2::after{
+                display: table;
+                content: '';
+                clear: both;
+            }
+            .column-2 p{
+                color: rgb(182, 183, 187);
+                font-size: 110%;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            .column-2 img{
+                margin-bottom: 6px;
+            }
+
+            .Org{
+                color: rgb(215, 67, 38);
+                font-size: 109%;
+            }
+            /*-----------------------contact-------------------------*/
+            .row-contact{
+                display: flex;
+                justify-content: space-between;
+                margin-left: 105px;
+                margin-top: 115px;
+            }
+            .contact-left{
+                flex-basis: 35%;
+            }
+            .contact-rigth{
+                flex-basis: 60%;
+                margin-right: 80px;
+                margin-top: -20px;
+            }
+            .contact-left p{
+                margin-top: 30px;
+            }
+            .contact-left p i{
+                color: #ff004f;
+                margin-right: 15px;
+                font-size: 25px;
+            }
+            .social-icons{
+                margin-top: 30px;
+            }
+            .social-icons a{
+                text-decoration: none;
+                font-size: 30px;
+                margin-right: 15px;
+                color: #ababab;
+                display: inline-block;
+                transition: transform 0.5s;
+            }
+            .social-icons a:hover{
+                color: #ff004f;
+                transform: translateY(-5px);
+            }
+            .btn{
+                display: block;
+                margin: 50px auto;
+                width: fit-content;
+                border: 1px solid #ff004f;
+                padding: 14px 50px;
+                border-radius: 6px;
+                text-decoration: none;
+                color: white;
+                transition: background 0.5s;
+            }
+            .btn:hover{
+                background-color: #ff004f;
+            }
+            .btn.btn2{
+                display: inline-block;
+                background: #ff004f;
+            }
+            .btn.btn2:hover{
+                background: #bd2152;
+                color: #fff;
+            }
+            .contact-rigth form{
+                width: 100%;
+            }
+            form input, form textarea{
+                width: 92%;
+                border: 0;
+                outline: none;
+                background: #262626;
+                padding: 15px;
+                margin: 23px 0;
+                color: #fff;
+                font-size: 20px;
+                border-radius: 6px;
+            }
+            form .btn.btn2{
+                padding: 14px 60px;
+                font-size: 17px;
+                margin-top: 20px;
+                cursor: pointer;
+            }
+            .copyrigth{
+                width: 100%;
+                text-align: center;
+                padding: 25px 0;
+                background: #262626;
+                font-weight: 300;
+                margin-top: 20px;
+            }
+            .copyrigth i{
+                color: #ff004f;
+            }
+            html{
+                scroll-behavior: smooth;
+            }
+            #msg{
+                color: #61b752;
+                margin-top: -40px;
+                display: block;
+            }
+            .mobile-menu {
+                display:none;
+                flex-direction: column;
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .mobile-menu span {
+                width: 25px;
+                height: 3px;
+                background-color: white;
+                margin: 3px 0;
+                transition: 0.3s;
+            }
+
+            /* MOBILE RESPONSIVE CODE - STARTS HERE */
+            @media screen and (max-width: 768px) {
+                /* Prevent horizontal scrolling */
+                body {
+                    overflow-x: hidden;
+                }
+                
+                /* Navigation adjustments */
+                nav {
+                    height: auto;
+                    padding: 15px 20px;
+                    flex-direction: column;
+                    position: relative;
+                }
+                
+                .left {
+                    position: static;
+                    left: 0;
+                    margin-bottom: 10px;
+                }
+                
+                .head-title {
+                    font-size: 28px;
+                }
+                
+                .mobile-menu {
+                    display: flex;
+                    position: absolute;
+                    right: 20px;
+                    top: 40px;
+                }
+                
+                .rigth {
+                    position: static;
+                    right: 0;
+                    width: 100%;
+                }
+                
+                nav ul {
+                    flex-direction: column;
+                    margin: 0;
+                    width: 100%;
+                    display: none;
+                    background-color: rgb(15, 16, 16);
+                    padding: 20px 0;
+                }
+                
+                nav ul.active {
+                    display: flex;
+                }
+                
+                nav ul li {
+                    margin: 15px 0;
+                    text-align: center;
+                }
+
+                /* Hero section */
+                .first {
+                    flex-direction: column;
+                    margin: 20px;
+                    text-align: center;
+                }
+                
+                .first > div {
+                    width: 100%;
+                    margin-left: 0;
+                    position: static;
+                    left: 0;
+                }
+                
+                .leftsection {
+                    font-size: 1.5rem;
+                    margin-right: 0;
+                    margin-top: 0;
+                    margin-bottom: 30px;
+                }
+                
+                .name {
+                    font-size: 2rem;
+                }
+                
+                #element {
+                    font-size: 1.8rem;
+                }
+                
+                .rigthsection img {
+                    width: 70%;
+                    position: static;
+                    right: 0;
+                    margin: 20px 0;
+                    margin-top: 0;
+                }
+
+                /* About section */
+                #about {
+                    padding: 40px 20px;
+                }
+                
+                .row {
+                    flex-direction: column;
+                }
+                
+                .col-1 {
+                    flex-basis: 100%;
+                    text-align: center;
+                    margin-bottom: 30px;
+                }
+                
+                .col-1 img {
+                    width: 80%;
+                    height: auto;
+                    position: static;
+                    left: 0;
+                    max-width: 300px;
+                }
+                
+                .col-2 {
+                    flex-basis: 100%;
+                    position: relative;
+                    left: 0;
+                    bottom: -30px;
+                }
+                
+                .sub-title {
+                    font-size: 32px;
+                    text-align: center;
+                    position: static;
+                    top: 0;
+                }
+                
+                .tab-titles {
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+                
+                .tab-links {
+                    margin-right: 30px;
+                    margin-bottom: 10px;
+                }
+
+                /* Certifications section */
+                #Certifications {
+                    padding: 40px 20px;
+                }
+                
+                .title {
+                    font-size: 32px;
+                    margin-top: 20px;
+                }
+                
+                .row-1, .row-2 {
+                    margin: 30px 0;
+                }
+                
+                .column-1, .column-2 {
+                    float: none;
+                    width: 90%;
+                    height: auto;
+                    margin-bottom: 30px;
+                    text-align: center;
+                }
+                
+                .column-1 img, .column-2 img {
+                    width: 100%;
+                    max-width: 350px;
+                    height: auto;
+                }
+
+                /* Contact section */
+                .row-contact {
+                    flex-direction: column;
+                    margin-left: 20px;
+                    margin-top: 40px;
+                }
+                
+                .contact-left, .contact-rigth {
+                    flex-basis: 100%;
+                    margin-right: 20px;
+                }
+                
+                .contact-left {
+                    margin-bottom: 30px;
+                }
+                
+                .contact-rigth {
+                    margin-top: 0;
+                }
+                
+                form input, form textarea {
+                    width: 88%;
+                    font-size: 16px;
+                }
+                
+                .btn {
+                    padding: 12px 30px;
+                    font-size: 16px;
+                }
+                
+                form .btn.btn2 {
+                    padding: 12px 40px;
+                    font-size: 16px;
+                }
+            }
+
+            /* Extra small devices */
+            @media screen and (max-width: 480px) {
+                .head-title {
+                    font-size: 24px;
+                }
+                
+                .leftsection {
+                    font-size: 1.3rem;
+                }
+                
+                .name {
+                    font-size: 1.7rem;
+                }
+                
+                #element {
+                    font-size: 1.5rem;
+                }
+                
+                .sub-title {
+                    font-size: 28px;
+                }
+                
+                .title {
+                    font-size: 28px;
+                }
+                
+                .tab-links {
+                    font-size: 16px;
+                    margin-right: 20px;
+                }
+                
+                #about {
+                    padding: 30px 15px;
+                }
+                
+                #Certifications {
+                    padding: 30px 15px;
+                }
+                
+                .row-contact {
+                    margin-left: 15px;
+                }
+                
+                .contact-rigth {
+                    margin-right: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <div class="left"><h1 class="head-title"><span class="head">J</span>unaid's
+                        Portfolio</h1></div>
+                <div class="rigth">
+                    <ul id="nav-links">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#Certifications">Certifications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mobile-menu" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+        <main>
+            <section class="first">
+                <div class="leftsection">
+                    Hi, My name is <span class="name">Junaid.</span>
+                    <div>I am a beginner in Web Development Platform</div>
+                    <div>and I am also a</div><span id="element"></span>
+
+                </div>
+                <div class="rigthsection">
+                    <img src="dev.png">
+                </div>
+            </section>
+        </main>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['AI/ML Intern.','Entry-Level Application Developer.','Python Developer.'],
+              typeSpeed: 50,
+              loop:true
+            });
+          </script>
+        <!--------------------About-------------------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <img src="WhatsApp Image 2023-11-01 at 10.09.57 PM.jpg">
+                    </div>
+                    <div class="col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I'm Shaik Junaid Ahmad, a 20-year-old from the city
+                           of Nellore in Andhra Pradesh. I have recently
+                        completed my Bachelor of Technology (B.Tech)
+                           degree from Narayana Engineering College,
+                        specializing in Computer Science and Engineering. I
+                           am passionate about Web Development and
+                        Artificial Intelligence, and I’m currently working as an
+                           AI/ML Intern at Ducima Analytics where I
+                        develop chatbot systems using LLMs, Flask, web scraping,
+                           and prompt engineering. Throughout my
+                        journey, I’ve cultivated self-confidence, self-discipline,
+                           and self-motivation, which drive my growth.
+                        My goal is to secure a full-time role in an MNC where I can
+                           contribute to impactful tech solutions.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link"
+                                onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li style="color: rgb(215, 67, 38);">Technical Skills</li>
+                                <li>Programming Languages: C, Python (OOPs), HTML, CSS, JavaScript, Data Structures (Basics)</li>
+                                <li>Frameworks & Libraries: LlamaIndex, Google GenAI (Gemini), Flask, Pandas, Streamlit</li>
+                                <li>Database: MySQL, SQLite</li>
+                                <li style="color: rgb(215, 67, 38);">Soft Skills</li>
+                                <li>Strong Communication, Team Collaboration, Time Management, Adaptability, Quick Learning</li>
+                           
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li>SSC - 2018</li>
+                                <p>Sri Chaitanya EM High
+                                    School,Vedayapalem,Nellore. GPA - 10</p>
+                                <li>Intermediate - 2020</li>
+                                <p>Sri Chaitanya junior College,
+                                    Vedayapalem,Nellore. Aggregate - 97.5</p>
+                                <li>B-Tech (CSE) - Currently Pursuing</li>
+                                <p>Narayana Engineering College, Nellore.
+                                    Aggregate - 85.0</p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <!----------------------------Certifications---------------------------------->
+        <div id="Certifications">
+            <div class="container">
+
+                <div class="row-1">
+                    <h1 class="title">Certifications</h1>
+                    <div class="column-1">
+                        <img src="spm-nptel-certificate.jpeg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <br>
+                        <p style="text-align: center;">Software Project
+                            Management(SPM) Course</p>
+                        <p style="text-align: center;">Completion Certificate
+                            from <span class="Org">Swayam NPTEL.</span></p>
+                    </div>
+                    <div class="column-1">
+                        <img src="udemy certificate.jpg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <p style="text-align: center;">Pyhton Course Completion
+                            Certificate</p>
+                        <p style="text-align: center;">from <span class="Org">Udemy.</span></p>
+                    </div>
+                    <div class="column-1">
+                        <img src="Microsoft azure iot developer.jpg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <p style="text-align: center;">Azure IOT Developer
+                            Speciality</p>
+                        <p style="text-align: center;">Certificate from <span
+                                class="Org">Microsoft.</span></p>
+                    </div>
+                </div>
+                <div class="row-2">
+                    <div class="column-2">
+                        <img src="certificate .jpg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <p style="text-align: center;">Python(Basic) Assesment
+                            Completion</p>
+                        <p style="text-align: center;"> Certificate from <span
+                                class="Org">Hackerrank.</span></p>
+                    </div>
+                    <div class="column-2">
+                        <img src="bharath-intern-certificate.jpg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <p style="text-align: center;">Web Developer Intern</p>
+                        <p style="text-align: center;">Completion Certificate
+                            from <span class="Org">BHARAT INTERN.</span></p>
+                    </div>
+                    <div class="column-2">
+                        <img src="intercell-certificate.jpg"
+                            style="width: 100%; height: 100%; border-radius: 10px;">
+                        <p style="text-align: center;">Career Mentoring Program
+                            Completion</p>
+                        <p style="text-align: center;">Certificate from <span
+                                class="Org">InterCell.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------Contact------------------------------------------------------>
+        <div id="contact">
+            <div class="container">
+                <div class="row-contact">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>junaidahmad1302@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91-9381911677</p>
+                        <div class="social-icons">
+                            <a href><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href = https://instagram.com/its__junaid__shaik___?utm_source=qr&igshid=MzNlNGNkZWQ4Mg==><i class="fa-brands fa-instagram"></i></a>
+                            <a href = https://www.linkedin.com/in/shaik-junaid-ahmad-93a672272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <a href="Junaid resume.pdf" download class="btn btn2">Download
+                            Resume</a>
+                    </div>
+                    <div class="contact-rigth">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name"
+                                placeholder="Your Name" required>
+                            <input type="email" name="Email"
+                                placeholder="Your Email" required>
+                            <textarea name="Message" rows="6"
+                                placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyrigth">
+                <p>Copyrigth © 2023 Shaik Junaid Ahmad <i class="fa-solid fa-heart"></i>. All Rigths Reserved.</p>
+            </div>
+        </div>
+       
+<script src="https://kit.fontawesome.com/3532c20431.js" crossorigin="anonymous"></script>
+<script>
+    // Your Google Apps Script URL
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyw7tfq-dN6APqEdBB3rt5et5wtOHPcKpGnjcbytdj7lITTwOfxWolg3DLw5vwIxuflBQ/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    // Test if the script URL is accessible (optional - remove if you don't want this)
+    console.log('Testing script URL accessibility...');
+    fetch(scriptURL, { method: 'GET' })
+        .then(response => {
+            console.log('Script URL test - Status:', response.status);
+            if (response.ok) {
+                console.log('✅ Script URL is accessible');
+            } else {
+                console.log('❌ Script URL returned status:', response.status);
+            }
+        })
+        .catch(error => {
+            console.log('❌ Script URL test failed:', error);
+        });
+
+    // Form submission handler
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        
+        console.log('Form submission started');
+        
+        // Show loading message
+        msg.innerHTML = "Sending message...";
+        msg.style.color = "#ffa500"; // Orange color for loading
+        
+        // Create FormData
+        const formData = new FormData(form);
+        
+        // Log form data for debugging
+        console.log('Form data being sent:');
+        for (let [key, value] of formData.entries()) {
+            console.log(key + ':', value);
+        }
+        
+        // Submit to Google Apps Script
+        fetch(scriptURL, { 
+            method: 'POST', 
+            body: formData,
+            mode: 'no-cors' // Required for Google Apps Script
+        })
+        .then(response => {
+            console.log('Response received:', response);
+            
+            // Success message
+            msg.innerHTML = "Message sent successfully!";
+            msg.style.color = "#61b752"; // Green color for success
+            
+            // Clear the form
+            form.reset();
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+        })
+        .catch(error => {
+            console.error('Error occurred:', error);
+            
+            // Error message
+            msg.innerHTML = "Error sending message. Please try again.";
+            msg.style.color = "#ff6b6b"; // Red color for error
+            
+            // Hide message after 5 seconds
+            setTimeout(() => {
+                msg.innerHTML = "";
+            }, 5000);
+        });
+    });
+</script>
+<script>
+    function toggleMenu() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('active');
+    }
+</script>
+    </body>
+</html>
