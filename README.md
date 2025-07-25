@@ -79,6 +79,7 @@ Update the `scriptURL` in the JavaScript section to use your own Apps Script end
 
 ## ✨ Screenshots
 
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/586a0a1b-0565-4d05-a0c2-3e017c7b11b6" />
 *Portfolio Screenshot* <!-- Replace with an actual screenshot if possible -->
 
 ---
