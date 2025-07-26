@@ -10,7 +10,8 @@ This project is a responsive web-based portfolio that showcases my **skills, cer
 
 - **Responsive Design**: Optimized for both desktop and mobile devices  
 - **About Me Section**: Brief introduction and background  
-- **Skills & Education Tabs**: Toggle between technical/soft skills and education history  
+- **Skills & Education Tabs**: Toggle between technical/soft skills and education history
+- **Projects**:  
 - **Certifications**: Visual gallery of completed courses and certificates  
 - **Contact Form**: Integrated with Google Sheets for direct messaging  
 - **Social Media Links**: Quick access to LinkedIn, Instagram, WhatsApp, etc.  
