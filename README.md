@@ -31,6 +31,9 @@ You can see a live demo by cloning the repository and opening `index.html` in yo
 Personal-Portfolio-Website/
 ├── index.html
 ├── dev.png
+├── Financial Calculator.png
+├── Ads.png
+├── Chatbot.png
 ├── WhatsApp Image 2023-11-01 at 10.09.57 PM.jpg
 ├── spm-nptel-certificate.jpeg
 ├── udemy certificate.jpg
